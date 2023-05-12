@@ -1,0 +1,37 @@
+
+
+About str
+Strongly composite numners:
+1. strongly composite numbers is a subset of composite numbers
+2. They should have number of prime factors less than or equal to the number of composite factors
+
+Examples:
+Strongly composite numbers:
+3 (prime number): 1, 3
+9 (square of a prime number): 1, 3, 9
+15 (product of 2 unique prime numbers): 1, 3, 5, 15
+
+https://codeforces.com/blog/entry/115465
+
+Conditions:
+1. Product pi(B) = pi(A)
+2. len(B) is maximum
+3. All bi are strongly composite and greater than 1.
+
+Observations:
+1. Stricly composite numbers are either squares of primes or products of 2 distinct primes.
+
+Strategy to get array B from A:
+
+
+We can define prime power as the sum of powers of prime numbers after prime factorization.
+
+a. If the prime power = 0, num = 1
+b. pp == 1, num is prime
+c. pp == 2, num is strongly composite
+d. pp > 2, num is a non strong composite number
+
+Input may contain all 4 cases. In any case we have to populate the array with a product of 2 primes (same will create square, otherwise it is still stonngly composite)
+
+
+If the sum of pp of elements of A is odd, then we cannot construct B.
