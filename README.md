@@ -1,5 +1,7 @@
 # codeforces-practice
 My solutions for codeforces problems
 
-## Notes
-1. `todo.txt` contains list of incomplete code
+## To do
+* random_walk
+* strongly_composite
+* cow_treats
